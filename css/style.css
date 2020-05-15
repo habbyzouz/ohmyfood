@@ -90,20 +90,73 @@ p {
     }
 }
 
+.flash {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.flash:hover {
+    -webkit-animation: zoom 2s 1 forwards;
+}
+
+.flash2 {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.flash2:hover {
+    -webkit-animation: zoom2 2s 1 forwards;
+}
+
+
+/* animation menu*/
+
+@keyframes zoom {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    100% {
+        -webkit-transform: scale(1.5, 1.5)
+    }
+}
+
+@keyframes zoom2 {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    100% {
+        -webkit-transform: scale(1.25, 1.25)
+    }
+}
+
 
 /*menu 1*/
 
-.lavieenchantee {
+.lanoteenchantee {
     background-color: #FFDDDA;
     width: 100%;
     height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
     justify-content: center;
     box-shadow: 1px 1px 6px #9EA1A2;
     text-decoration: none;
     position: relative;
+    overflow: hidden;
 }
 
 .fas {
@@ -129,10 +182,10 @@ p {
 }
 
 
-/* menu & pour ordinateur*/
+/* menu 1 pour ordinateur*/
 
 @media all and (min-width: 1024px) {
-    .lavieenchantee {
+    .lanoteenchantee {
         width: 150px;
         height: 220px;
     }
@@ -164,6 +217,8 @@ p {
     align-items: center;
     box-shadow: 1px 1px 6px #9EA1A2;
     text-decoration: none;
+    position: relative;
+    overflow: hidden;
 }
 
 .h1menu2 {
@@ -211,6 +266,9 @@ p {
     justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 6px #9EA1A2;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
 }
 
 .h1menu3 {
@@ -230,6 +288,9 @@ p {
     font-family: 'Shadows Into Light', cursive;
     font-style: italic;
 }
+
+
+/*menu 3 pour ordi*/
 
 @media all and (min-width: 1024px) {
     .menu3 {
@@ -253,6 +314,9 @@ p {
     justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 6px #9EA1A2;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
 }
 
 .h1menu4 {
@@ -272,6 +336,9 @@ p {
     font-family: 'Shadows Into Light', cursive;
     font-style: italic;
 }
+
+
+/*menu 4 pour ordi*/
 
 @media all and (min-width: 1024px) {
     .menu4 {

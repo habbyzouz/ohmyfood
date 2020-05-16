@@ -1,0 +1,323 @@
+/*body*/
+
+body {
+    width: auto;
+    height: auto;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+p {
+    margin-top: 0%;
+    font-size: 15px;
+    font-family: 'Kalam', cursive;
+    color: #44C856;
+}
+
+h1 {
+    margin-bottom: 0%;
+    font-size: 20px;
+}
+
+h2 {
+    margin: 0%;
+    font-family: 'Kalam', cursive;
+    font-weight: bolder;
+    font-size: 17px;
+    color: #430B15;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #430B15, #430B15) no-repeat bottom left;
+    background-size: 0px 2px;
+    transition: 1s;
+}
+
+
+/*header*/
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #35A189;
+}
+
+.h1header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+}
+
+.logoohmyfood {
+    width: 50%;
+}
+
+
+/*main*/
+
+.conteneur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+/* bloc central */
+
+.contenant {
+    width: 90%;
+    height: auto;
+    margin: 3% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FDFFFD;
+    box-shadow: 1px 1px 6px #9EA1A2;
+}
+
+
+/*menu*/
+
+
+/*entete du menu*/
+
+.enteteresto {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.enteterestonom {
+    font-size: 20px;
+    font-family: 'Kaushan Script', cursive;
+    background: -webkit-linear-gradient(left, #009D3C, #A3FF7B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+/*bloc principal du menu*/
+
+.menu {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.entreeplatdessert {
+    padding-bottom: 20px;
+    width: 90%;
+}
+
+.fleche {
+    width: 70px;
+    height: auto;
+}
+
+.titre2 {
+    margin: 0%;
+    text-align: left;
+}
+
+.titre3 {
+    margin: 0%;
+    text-align: right;
+}
+
+.titre {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.liste {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ligne {
+    display: flex;
+    flex-direction: row;
+}
+
+.plat {
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    line-height: 20px;
+}
+
+.prixplat {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+}
+
+
+/*pied de page du menu*/
+
+.pieddepageresto {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pieddepagerestonom {
+    font-size: 15px;
+    font-family: 'Kaushan Script', cursive;
+    background: -webkit-linear-gradient(left, #009D3C, #A3FF7B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+
+/*fin de la partie menu*/
+
+
+/*footer*/
+
+.footer {
+    width: 100%;
+    height: 25px;
+    background-color: #35A189;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+}
+
+.footer1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.mention {
+    color: #D7C255;
+    font-size: 100%;
+    padding-left: 20px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.footer2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contact {
+    color: #D7C255;
+    font-size: 100%;
+    padding-right: 20px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+
+/* mediQ tablette et ordinateur */
+
+@media all and (min-width: 1024px) {
+    h1 {
+        margin: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 150%;
+        height: 39px;
+    }
+    .fleche {
+        width: 80%;
+    }
+    .titre {
+        margin-bottom: 25px;
+    }
+    .header {
+        height: 70px;
+    }
+    .h1header {
+        height: 70px;
+    }
+    .logoohmyfood {
+        width: 15%;
+    }
+    .enteterestonom {
+        font-size: 30px;
+    }
+    .contenant {
+        width: 80%;
+        height: 1100px;
+        margin: 0%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    .entreeplatdessert {
+        padding-bottom: 30px;
+    }
+    .pieddepagerestoicon {
+        font-size: 1.5em;
+        margin-right: 20px;
+    }
+    .pieddepagerestonom {
+        font-size: 20px;
+    }
+}
+
+
+/*ANIMATIONS*/
+
+
+/* annimation soulignée */
+
+h2:hover {
+    background-size: 100% 2px;
+}
+
+
+/* annimation footer*/
+
+@keyframes agite {
+    0% {
+        -webkit-transform: rotate(2deg);
+    }
+    50% {
+        -webkit-transform-origin: center;
+    }
+    100% {
+        -webkit-transform: rotate(-2deg);
+    }
+}
+
+.mention:hover {
+    -webkit-animation: agite 0.1s alternate infinite ease-in-out;
+}
+
+.contact:hover {
+    -webkit-animation: agite 0.1s alternate infinite ease-in-out;
+}

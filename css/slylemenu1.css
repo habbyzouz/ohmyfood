@@ -10,7 +10,28 @@ body {
 }
 
 p {
+    margin-top: 0%;
+    font-size: 15px;
+    font-family: 'Kalam', cursive;
+    color: #430B15;
+}
+
+h1 {
+    margin-bottom: 0%;
+    font-size: 20px;
+}
+
+h2 {
     margin: 0%;
+    font-family: 'Kalam', cursive;
+    font-weight: bolder;
+    font-style: center;
+    font-size: 17px;
+    color: #430B15;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #430B15, #430B15) no-repeat bottom left;
+    background-size: 0px 2px;
+    transition: 1s;
 }
 
 
@@ -36,57 +57,154 @@ p {
 }
 
 
-/* header pour tablette et ordinateur */
-
-@media all and (min-width: 1024px) {
-    .header {
-        height: 70px;
-    }
-    .h1header {
-        height: 70px;
-    }
-    .logoohmyfood {
-        width: 15%;
-    }
-}
-
-
 /*main*/
 
 .conteneur {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 
-/* menu */
+/* bloc central */
 
-.menus {
-    width: 80%;
-    height: 2100px;
-    margin: 10%;
+.contenant {
+    width: 90%;
+    height: auto;
+    margin: 3% 10%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
     background-color: #FFDDDA;
+    box-shadow: 1px 1px 6px #9EA1A2;
 }
 
 
-/* menu pour tablette*/
+/*menu*/
 
-@media all and (min-width: 1024px) {
-    .menus {
-        width: 30%;
-        height: 550px;
-        margin: 0%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-content: space-around;
-    }
+
+/*entete du menu*/
+
+.enteteresto {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
+
+.enteterestoicon {
+    background-image: -webkit-linear-gradient(left, #FF3B53, #FF875D);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0%;
+    font-size: 2em;
+    padding-top: 15px;
+}
+
+.enteterestonom {
+    font-size: 30px;
+    color: #582f34;
+    font-family: 'Devonshire', cursive;
+    margin-bottom: 15px;
+}
+
+
+/*bloc principal du menu*/
+
+.menu {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.entreeplatdessert {
+    padding-bottom: 20px;
+}
+
+.fleche {
+    width: 80px;
+    height: auto;
+}
+
+.titre2 {
+    margin: 0%;
+    text-align: left;
+}
+
+.titre3 {
+    margin: 0%;
+    text-align: right;
+}
+
+.titre {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.liste {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ligne {
+    display: flex;
+    flex-direction: row;
+}
+
+.plat {
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    line-height: 20px;
+}
+
+.prixplat {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+}
+
+
+/*pied de page du menu*/
+
+.pieddepageresto {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pieddepagerestoicon {
+    background-image: -webkit-linear-gradient(left, #FF3B53, #FF875D);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0%;
+    padding-right: 5px;
+}
+
+.pieddepagerestonom {
+    font-size: 15px;
+    color: #582f34;
+    font-family: 'Devonshire', cursive;
+    margin-bottom: 0px;
+}
+
+
+/*fin de la partie menu*/
 
 
 /*footer*/
@@ -127,6 +245,68 @@ p {
     padding-right: 20px;
     margin: 0px;
     text-decoration: none;
+}
+
+
+/* mediQ tablette et ordinateur */
+
+@media all and (min-width: 1024px) {
+    h1 {
+        margin: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 150%;
+        height: 40px;
+    }
+    .fleche {
+        width: 80%;
+    }
+    .titre {
+        margin-bottom: 25px;
+    }
+    .header {
+        height: 70px;
+    }
+    .h1header {
+        height: 70px;
+    }
+    .logoohmyfood {
+        width: 15%;
+    }
+    .contenant {
+        width: 80%;
+        height: 1100px;
+        margin: 0%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    .entreeplatdessert {
+        width: 90%;
+        padding-bottom: 30px;
+    }
+    .pieddepagerestoicon {
+        font-size: 1.5em;
+        margin-right: 20px;
+    }
+    .pieddepagerestonom {
+        font-size: 20px;
+    }
+}
+
+
+/*ANIMATIONS*/
+
+
+/* annimation soulignée */
+
+h2:hover {
+    background-size: 100% 2px;
 }
 
 

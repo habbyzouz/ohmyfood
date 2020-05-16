@@ -25,7 +25,6 @@ h2 {
     margin: 0%;
     font-family: 'Kalam', cursive;
     font-weight: bolder;
-    font-style: center;
     font-size: 17px;
     color: #430B15;
     display: inline-block;
@@ -130,7 +129,7 @@ h2 {
 }
 
 .fleche {
-    width: 80px;
+    width: 70px;
     height: auto;
 }
 

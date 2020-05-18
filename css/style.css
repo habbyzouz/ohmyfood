@@ -88,6 +88,12 @@ p {
         justify-content: space-around;
         align-content: space-around;
     }
+    .flash:hover {
+        -webkit-animation: zoom 2s 1 forwards;
+    }
+    .flash2:hover {
+        -webkit-animation: zoom2 2s 1 forwards;
+    }
 }
 
 .flash {
@@ -101,10 +107,6 @@ p {
     position: absolute;
 }
 
-.flash:hover {
-    -webkit-animation: zoom 2s 1 forwards;
-}
-
 .flash2 {
     width: 80%;
     height: auto;
@@ -114,10 +116,6 @@ p {
     align-content: center;
     justify-content: center;
     position: absolute;
-}
-
-.flash2:hover {
-    -webkit-animation: zoom2 2s 1 forwards;
 }
 
 

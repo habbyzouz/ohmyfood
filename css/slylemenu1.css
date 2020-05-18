@@ -250,7 +250,7 @@ h2 {
 
 /* mediQ tablette et ordinateur */
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1124px) {
     h1 {
         margin: 30px;
     }
@@ -275,6 +275,7 @@ h2 {
     }
     .logoohmyfood {
         width: 15%;
+        min-width: 216px;
     }
     .contenant {
         width: 80%;
@@ -295,6 +296,19 @@ h2 {
     }
     .pieddepagerestonom {
         font-size: 20px;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 1023px) {
+    .header {
+        height: 70px;
+    }
+    .h1header {
+        height: 70px;
+    }
+    .logoohmyfood {
+        width: 15%;
+        min-width: 216px;
     }
 }
 

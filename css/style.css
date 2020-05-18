@@ -41,6 +41,19 @@ p {
 
 /* header pour tablette et ordinateur */
 
+@media all and (min-width: 500px) and (max-width: 1023px) {
+    .header {
+        height: 70px;
+    }
+    .h1header {
+        height: 70px;
+    }
+    .logoohmyfood {
+        width: 15%;
+        min-width: 216px;
+    }
+}
+
 @media all and (min-width: 1024px) {
     .header {
         height: 70px;
@@ -50,6 +63,7 @@ p {
     }
     .logoohmyfood {
         width: 15%;
+        min-width: 216px;
     }
 }
 

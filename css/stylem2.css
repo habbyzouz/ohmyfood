@@ -11,9 +11,8 @@ body {
 
 p {
     margin-top: 0%;
-    font-size: 15px;
+    font-size: 13px;
     font-family: 'Kalam', cursive;
-    color: #D16400;
 }
 
 h1 {
@@ -25,10 +24,27 @@ h2 {
     margin: 0%;
     font-family: 'Kalam', cursive;
     font-weight: bolder;
-    font-size: 17px;
-    color: #430B15;
+    font-size: 13px;
     display: inline-block;
-    background: -webkit-linear-gradient(top, #430B15, #430B15) no-repeat bottom left;
+}
+
+.h21 {
+    color: #d3904b;
+    background: -webkit-linear-gradient(top, #d3904b, #d3904b) no-repeat bottom left;
+    background-size: 0px 2px;
+    transition: 1s;
+}
+
+.h22 {
+    color: #a277c6;
+    background: -webkit-linear-gradient(top, #a277c6, #a277c6) no-repeat bottom left;
+    background-size: 0px 2px;
+    transition: 1s;
+}
+
+.h23 {
+    color: #6e4ccc;
+    background: -webkit-linear-gradient(top, #6e4ccc, #6e4ccc) no-repeat bottom left;
     background-size: 0px 2px;
     transition: 1s;
 }
@@ -53,6 +69,12 @@ h2 {
 
 .logoohmyfood {
     width: 50%;
+}
+
+.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -123,7 +145,7 @@ h2 {
 }
 
 .fleche {
-    width: 70px;
+    width: 40px;
     height: auto;
 }
 
@@ -146,10 +168,25 @@ h2 {
     margin-bottom: 10px;
 }
 
-.liste {
+.liste1 {
     display: flex;
     flex-direction: column;
     width: 100%;
+    color: #d3904b;
+}
+
+.liste2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #a277c6;
+}
+
+.liste3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #6e4ccc;
 }
 
 .ligne {
@@ -204,6 +241,8 @@ h2 {
     display: flex;
     position: fixed;
     bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .footer1 {
@@ -245,8 +284,16 @@ h2 {
     p {
         font-size: 20px;
     }
-    h2 {
-        font-size: 150%;
+    .h21 {
+        font-size: 125%;
+        height: 39px;
+    }
+    .h22 {
+        font-size: 125%;
+        height: 39px;
+    }
+    .h23 {
+        font-size: 125%;
         height: 39px;
     }
     .fleche {
@@ -254,6 +301,12 @@ h2 {
     }
     .titre {
         margin-bottom: 25px;
+    }
+    .titre2 {
+        width: 33%;
+    }
+    .titre3 {
+        width: 33%;
     }
     .header {
         height: 70px;
@@ -274,6 +327,9 @@ h2 {
         flex-wrap: wrap;
         justify-content: space-around;
         align-content: space-around;
+    }
+    .enteterestonom {
+        font-size: 50px;
     }
     .entreeplatdessert {
         padding-bottom: 30px;

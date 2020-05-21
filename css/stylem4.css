@@ -13,7 +13,7 @@ p {
     margin-top: 0%;
     font-size: 15px;
     font-family: 'Kalam', cursive;
-    color: #44C856;
+    color: black
 }
 
 h1 {
@@ -25,10 +25,10 @@ h2 {
     margin: 0%;
     font-family: 'Kalam', cursive;
     font-weight: bolder;
-    font-size: 17px;
-    color: #430B15;
+    font-size: 15px;
+    color: black;
     display: inline-block;
-    background: -webkit-linear-gradient(top, #430B15, #430B15) no-repeat bottom left;
+    background: -webkit-linear-gradient(top, black, black) no-repeat bottom left;
     background-size: 0px 2px;
     transition: 1s;
 }
@@ -53,6 +53,12 @@ h2 {
 
 .logoohmyfood {
     width: 50%;
+}
+
+.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -123,7 +129,7 @@ h2 {
 }
 
 .fleche {
-    width: 70px;
+    width: 50px;
     height: auto;
 }
 
@@ -204,6 +210,8 @@ h2 {
     display: flex;
     position: fixed;
     bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .footer1 {
@@ -246,7 +254,7 @@ h2 {
         font-size: 20px;
     }
     h2 {
-        font-size: 150%;
+        font-size: 125%;
         height: 39px;
     }
     .fleche {
@@ -254,6 +262,12 @@ h2 {
     }
     .titre {
         margin-bottom: 25px;
+    }
+    .titre2 {
+        width: 33%;
+    }
+    .titre3 {
+        width: 33%;
     }
     .header {
         height: 70px;
@@ -266,7 +280,7 @@ h2 {
         min-width: 216px;
     }
     .enteterestonom {
-        font-size: 30px;
+        font-size: 50px;
     }
     .contenant {
         width: 80%;

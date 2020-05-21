@@ -55,6 +55,12 @@ h2 {
     width: 50%;
 }
 
+.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*main*/
 
@@ -129,7 +135,7 @@ h2 {
 }
 
 .fleche {
-    width: 70px;
+    width: 50px;
     height: auto;
 }
 
@@ -186,6 +192,7 @@ h2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-bottom: 15px;
 }
 
 .pieddepagerestoicon {
@@ -216,6 +223,8 @@ h2 {
     display: flex;
     position: fixed;
     bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .footer1 {
@@ -266,6 +275,12 @@ h2 {
     }
     .titre {
         margin-bottom: 25px;
+    }
+    .titre2 {
+        width: 33%;
+    }
+    .titre3 {
+        width: 33%;
     }
     .header {
         height: 70px;
